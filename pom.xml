@@ -11,6 +11,7 @@
     <artifactId>selenium-java</artifactId>
     <version>4.9.0</version>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
     <groupId>org.apache.poi</groupId>
@@ -40,7 +41,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.4.0</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency>
 
 <!-- pom.xml -->
@@ -59,5 +60,29 @@
 
   </dependencies>
   
+<build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.1.2</version>
+        <configuration>
+          <suiteXmlFiles>
+           <suiteXmlFile>PBLoginTest.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.11.0</version>
+            <configuration>
+            <!--put your configuration here-->
+              </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
   
 </project>
