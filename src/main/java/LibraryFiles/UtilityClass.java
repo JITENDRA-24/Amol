@@ -22,7 +22,7 @@ public class UtilityClass
 	//need to pass 2 inputs: 1-rowIndex, 2-colIndex
 	public static String getTestData(int rowIndex, int colIndex) throws EncryptedDocumentException, IOException 
 	{
-		FileInputStream file=new FileInputStream("C:\\Users\\Shree\\eclipse-workspace\\For_Amol_\\TestData\\SeleniumRevisionC'wad.xlsx");
+		FileInputStream file=new FileInputStream("C:\\Users\\Shree\\eclipse-workspace\\PolicyBazar\\TestData\\SeleniumRevisionC'wad.xlsx");
 		Sheet sh = WorkbookFactory.create(file).getSheet("DDF");
 		
 		String value = sh.getRow(rowIndex).getCell(colIndex).getStringCellValue();
@@ -34,14 +34,14 @@ public class UtilityClass
 	public static void captureSS(WebDriver driver, int TCID) throws IOException 
 	{
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest=new File("C:\\Users\\Shree\\eclipse-workspace\\For_Amol_\\FailedTCSS\\TestCsseID"+TCID+".jpg");
+		File dest=new File("C:\\Users\\Shree\\eclipse-workspace\\PolicyBazar\\FailedTCSS\\TestCsseID"+TCID+".jpg");
 		FileUtils.copyFile(src, dest);
 	}
 	
 	
 	public static String getPFData(String key) throws IOException
 	{
-		FileInputStream file=new FileInputStream("C:\\Users\\Shree\\eclipse-workspace\\For_Amol_\\PropertyFile.properties");
+		FileInputStream file=new FileInputStream("C:\\Users\\Shree\\eclipse-workspace\\PolicyBazar\\PropertyFile.properties");
 		
 		Properties p=new Properties();
 		p.load(file);
