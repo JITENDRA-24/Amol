@@ -130,15 +130,15 @@
                   <a name="verifyFullName">
                   </a> <!-- verifyFullName -->
                   <span class="method-name">verifyFullName</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span id=&quot;central-login-sign-in-with-password-span&quot;&gt;...&lt;/span&gt; is not clickable at point (674, 465). Other element would receive the click: &lt;li class=&quot;country-drop-down-list-container&quot; countryicon=&quot;https://caccount.policybazaar.com/Content/countryIcon/au.svg&quot; countrycode=&quot;61&quot; countryname=&quot;AUSTRALIA&quot;&gt;...&lt;/li&gt;
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (575, 6584)
   (Session info: chrome=115.0.5790.171)
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0339d80f0c908885c44ef230d171607f, clickElement {id=14932C3AC4E701A926F1F9ECDEC1B9E4_element_62}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Shree\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62828/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (0339d80f0c908885c44ef230d171607f)] -&gt; xpath: (//span[text()=&apos;Sign in with Password&apos;])[2]]
-Session ID: 0339d80f0c908885c44ef230d171607f
+Command: [7a7e102b5ae5fa74b8fa07341b2da91a, clickElement {id=1840E863B1ABBD0F8E171098ADCA48DA_element_60}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Shree\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60638/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7a7e102b5ae5fa74b8fa07341b2da91a)] -&gt; xpath: //ul[@id=&apos;central-login-country-list&apos;]/li//span[text()=&apos;SPAIN&apos;]]
+Session ID: 7a7e102b5ae5fa74b8fa07341b2da91a
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -150,8 +150,8 @@ Session ID: 0339d80f0c908885c44ef230d171607f
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at Module1_Login.PBMobNumPage.clickPBMobNumPageSignInWithPwd(PBMobNumPage.java:45)
-	at Module1_login_Test.PBLoginTest1.loginToApp(PBLoginTest1.java:71)
+	at Module1_Login.PBMobNumPage.selectCountryCode(PBMobNumPage.java:38)
+	at Module1_login_Test.PBLoginTest1.loginToApp(PBLoginTest1.java:69)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
@@ -256,25 +256,25 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">748 ms</span>
+                <span class="method-start">328 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">9733 ms</span>
+                <span class="method-start">15709 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyFullName</span>
-                <span class="method-start">14540 ms</span>
+                <span class="method-start">19637 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">name</span>
-                <span class="method-start">14553 ms</span>
+                <span class="method-start">19654 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">14559 ms</span>
+                <span class="method-start">19660 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -21,7 +21,7 @@ public class BaseClass
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(UtilityClass.getPFData("URL"));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
 }

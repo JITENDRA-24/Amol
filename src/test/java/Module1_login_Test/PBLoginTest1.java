@@ -66,7 +66,7 @@ public class PBLoginTest1 extends BaseClass
 	public void loginToApp() throws InterruptedException, EncryptedDocumentException, IOException
 	{
 		login.clickPBLoginPageSignIN();
-		//mobNum.selectCountryCode();
+		mobNum.selectCountryCode();
 		mobNum.inpPBMobNumPageMobNum(UtilityClass.getPFData("mobNum"));
 		mobNum.clickPBMobNumPageSignInWithPwd();
 		pwd.inpPBPwdPagePWD(UtilityClass.getPFData("pwd"));
